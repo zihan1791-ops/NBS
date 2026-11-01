@@ -1,0 +1,83 @@
+{
+  "best_epoch": 122,
+  "best_val_metrics": {
+    "mIoU": 0.879055051221189,
+    "mDice": 0.9332002828715296,
+    "accuracy": 0.9720866666666667,
+    "per_class_iou": [
+      0.9688274237271591,
+      0.7892826787152187
+    ],
+    "per_class_dice": [
+      0.9841669331211221,
+      0.8822336326219369
+    ],
+    "confusion_matrix": [
+      [
+        4684672,
+        73761
+      ],
+      [
+        76971,
+        564596
+      ]
+    ],
+    "boundary_f1": 0.6907215009036147,
+    "boundary_precision": 0.6968397649674448,
+    "boundary_recall": 0.6847097386609712,
+    "boundary_tolerance_px": 1,
+    "loss": 0.17985484291006018,
+    "main_loss": 0.17985484291006018
+  },
+  "test_metrics": {
+    "mIoU": 0.8832885352531339,
+    "mDice": 0.935719417582616,
+    "accuracy": 0.9739394444444445,
+    "per_class_iou": [
+      0.9709979310880655,
+      0.7955791394182024
+    ],
+    "per_class_dice": [
+      0.9852855913978944,
+      0.8861532437673376
+    ],
+    "confusion_matrix": [
+      [
+        4711582,
+        74993
+      ],
+      [
+        65734,
+        547691
+      ]
+    ],
+    "boundary_f1": 0.7112625273163548,
+    "boundary_precision": 0.7169680267078936,
+    "boundary_recall": 0.7056471176323567,
+    "boundary_tolerance_px": 1,
+    "loss": 0.1593408997412081,
+    "main_loss": 0.1593408997412081
+  },
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_0",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9984717984445542,
+      "roc_auc": 0.9913926450194822
+    },
+    "缺陷": {
+      "average_precision": 0.9541109458965418,
+      "roc_auc": 0.9913926419699672
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3305434,
+  "training_seconds": 692.6754319667816
+}

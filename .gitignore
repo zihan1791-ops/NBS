@@ -1,0 +1,31 @@
+# ===== 虚拟环境（约 5 GB，不入库）=====
+.venv/
+venv/
+env/
+
+# ===== Python 缓存与构建产物 =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+
+# ===== 训练产物：权重与归档结果（约 1.8 GB，不入库）=====
+results[归档]/
+results/
+*.pth
+*.pt
+*.ckpt
+
+# ===== 日志（约 37 MB）=====
+logs/
+
+# ===== 操作系统临时文件 =====
+Thumbs.db
+.DS_Store
+
+# ===== 数据集（约 58 MB，默认保留；如不想上传数据集，删掉下一行开头的 #）=====
+# data/

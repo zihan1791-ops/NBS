@@ -1,0 +1,89 @@
+{
+  "model_variant": "BiSeNetV2 + ScConv fused (direct)",
+  "scheduler": "cosine (warmup=5)",
+  "epochs_planned": 300,
+  "epochs_trained": 300,
+  "scconv_enabled": true,
+  "scconv_placement": [
+    "fused"
+  ],
+  "scconv_residual": false,
+  "scconv_residual_initial_scale": 0.1,
+  "scconv_gamma_normalise": true,
+  "scconv_fused_block": "scconv",
+  "scconv_replace": [],
+  "scconv_replaced_layers": [],
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_0",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "best_epoch": 255,
+  "best_val_metrics": {
+    "mIoU": 0.8895883971868943,
+    "mDice": 0.9395671308346158,
+    "accuracy": 0.9746846296296297,
+    "per_class_iou": [
+      0.9716769175880617,
+      0.8074998767857269
+    ],
+    "per_class_dice": [
+      0.9856350286604837,
+      0.8934992330087481
+    ],
+    "confusion_matrix": [
+      [
+        4689855,
+        68578
+      ],
+      [
+        68125,
+        573442
+      ]
+    ],
+    "loss": 0.1924919499291314,
+    "main_loss": 0.1924919499291314
+  },
+  "test_metrics": {
+    "mIoU": 0.892714155689668,
+    "mDice": 0.9413930833837179,
+    "accuracy": 0.9761337037037037,
+    "per_class_iou": [
+      0.9733900009022929,
+      0.8120383104770433
+    ],
+    "per_class_dice": [
+      0.9865155903873334,
+      0.8962705763801024
+    ],
+    "confusion_matrix": [
+      [
+        4714339,
+        72236
+      ],
+      [
+        56642,
+        556783
+      ]
+    ],
+    "loss": 0.16280427773793538,
+    "main_loss": 0.16280427773793538
+  },
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9975128359163777,
+      "roc_auc": 0.9881838401030916
+    },
+    "缺陷": {
+      "average_precision": 0.9452480989490055,
+      "roc_auc": 0.9881838352853075
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3649818,
+  "training_seconds": 2548.230023622513
+}

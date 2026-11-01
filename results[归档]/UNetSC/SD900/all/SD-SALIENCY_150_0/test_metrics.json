@@ -1,0 +1,58 @@
+{
+  "model": "U-Net",
+  "dataset": "sd-saliency",
+  "checkpoint": "G:\\NBS\\UNetSC\\SD900\\all\\SD-SALIENCY_150_0\\best.pth",
+  "best_epoch": 140,
+  "split_counts": {
+    "train": 630,
+    "val": 135,
+    "test": 135
+  },
+  "test_metrics_are_independent": false,
+  "test_loss": 0.14238112814286175,
+  "test_ce_loss": 0.07971229163162849,
+  "test_dice_loss": 0.06266883716863744,
+  "parameter_count": 3288482,
+  "epochs_planned": 150,
+  "epochs_trained": 150,
+  "training_seconds": 2630.7010283470154,
+  "best_val_miou": 0.8981900215148926,
+  "scheduler": "cosine (warmup=5)",
+  "deterministic_algorithms": false,
+  "seed": 42,
+  "mIoU": 0.8982590436935425,
+  "mDice": 0.9447811841964722,
+  "Acc": 0.9757731556892395,
+  "per_class_iou": [
+    0.97267746925354,
+    0.8238405585289001
+  ],
+  "per_class_dice": [
+    0.9861495494842529,
+    0.9034128785133362
+  ],
+  "per_class_acc": [
+    0.9880953431129456,
+    0.8911744356155396
+  ],
+  "confusion_matrix": [
+    [
+      4657349,
+      56112
+    ],
+    [
+      74713,
+      611826
+    ]
+  ],
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9976976806067984,
+      "roc_auc": 0.9900679377964221
+    },
+    "缺陷": {
+      "average_precision": 0.962796363823617,
+      "roc_auc": 0.9900679279349425
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "model": "U-Net",
+  "dataset": "neu",
+  "checkpoint": "G:\\NBS\\results\\unet\\NEU_300_0\\best.pth",
+  "best_epoch": 234,
+  "split_counts": {
+    "train": 2904,
+    "val": 726,
+    "test": 840
+  },
+  "test_metrics_are_independent": true,
+  "test_loss": 0.4976415178685818,
+  "test_ce_loss": 0.05644371852559863,
+  "test_dice_loss": 0.4411977987806752,
+  "parameter_count": 7849700,
+  "epochs_planned": 300,
+  "epochs_trained": 264,
+  "training_seconds": 14258.446556329727,
+  "best_val_miou": 0.8802512288093567,
+  "scheduler": "plateau (warmup=0)",
+  "deterministic_algorithms": false,
+  "seed": 42,
+  "mIoU": 0.8755360841751099,
+  "mDice": 0.9321267604827881,
+  "Acc": 0.9812208414077759,
+  "per_class_iou": [
+    0.9788500070571899,
+    0.782616138458252,
+    0.8888038396835327,
+    0.8518742918968201
+  ],
+  "per_class_dice": [
+    0.989311933517456,
+    0.8780534863471985,
+    0.9411287903785706,
+    0.9200130701065063
+  ],
+  "per_class_acc": [
+    0.990337610244751,
+    0.867715060710907,
+    0.9337897896766663,
+    0.9182059168815613
+  ],
+  "confusion_matrix": [
+    [
+      29134165,
+      90349,
+      122075,
+      71826
+    ],
+    [
+      110038,
+      726753,
+      0,
+      757
+    ],
+    [
+      159691,
+      0,
+      2252188,
+      0
+    ],
+    [
+      75522,
+      723,
+      0,
+      855913
+    ]
+  ],
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9991472536528199,
+      "roc_auc": 0.9956681696079185
+    },
+    "夹杂": {
+      "average_precision": 0.9455298597654921,
+      "roc_auc": 0.9954811931901445
+    },
+    "斑块": {
+      "average_precision": 0.9867428835666544,
+      "roc_auc": 0.9979766899008036
+    },
+    "划痕": {
+      "average_precision": 0.9746017208204174,
+      "roc_auc": 0.9974143068091234
+    }
+  }
+}

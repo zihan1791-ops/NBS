@@ -1,0 +1,89 @@
+{
+  "model_variant": "BiSeNetV2 + conv1x1 control block (direct)",
+  "scheduler": "cosine (warmup=5)",
+  "epochs_planned": 300,
+  "epochs_trained": 300,
+  "scconv_enabled": true,
+  "scconv_placement": [
+    "fused"
+  ],
+  "scconv_residual": false,
+  "scconv_residual_initial_scale": 0.1,
+  "scconv_gamma_normalise": true,
+  "scconv_fused_block": "conv1x1",
+  "scconv_replace": [],
+  "scconv_replaced_layers": [],
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_0",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "best_epoch": 243,
+  "best_val_metrics": {
+    "mIoU": 0.8880907439206394,
+    "mDice": 0.9386610038861549,
+    "accuracy": 0.9744411111111111,
+    "per_class_iou": [
+      0.9714315875756033,
+      0.8047499002656753
+    ],
+    "per_class_dice": [
+      0.9855087984769844,
+      0.8918132092953255
+    ],
+    "confusion_matrix": [
+      [
+        4693122,
+        65311
+      ],
+      [
+        72707,
+        568860
+      ]
+    ],
+    "loss": 0.21466583168065106,
+    "main_loss": 0.21466583168065106
+  },
+  "test_metrics": {
+    "mIoU": 0.8942749629010274,
+    "mDice": 0.9423119422849028,
+    "accuracy": 0.9766916666666666,
+    "per_class_iou": [
+      0.9740339393834369,
+      0.8145159864186178
+    ],
+    "per_class_dice": [
+      0.9868461934222502,
+      0.8977776911475553
+    ],
+    "confusion_matrix": [
+      [
+        4721424,
+        65151
+      ],
+      [
+        60714,
+        552711
+      ]
+    ],
+    "loss": 0.17365486919879913,
+    "main_loss": 0.17365486919879913
+  },
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9968826083907666,
+      "roc_auc": 0.9859350896629425
+    },
+    "缺陷": {
+      "average_precision": 0.9398471726026812,
+      "roc_auc": 0.9859358641337913
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3636378,
+  "training_seconds": 2424.057314634323
+}

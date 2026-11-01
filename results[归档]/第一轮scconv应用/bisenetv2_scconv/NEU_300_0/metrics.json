@@ -1,0 +1,132 @@
+{
+  "model_variant": "BiSeNetV2 + residual ScConv after BGA",
+  "scconv_enabled": true,
+  "scconv_placement": [
+    "fused"
+  ],
+  "scconv_residual": true,
+  "scconv_residual_initial_scale": 0.1,
+  "dataset": "neu",
+  "run_name": "NEU_300_0",
+  "data_root": "G:\\NBS\\data\\NEU_Seg-main",
+  "best_epoch": 229,
+  "best_val_metrics": {
+    "mIoU": 0.8732464118445981,
+    "mDice": 0.9304748872487066,
+    "accuracy": 0.9833025482093664,
+    "per_class_iou": [
+      0.9819040516447337,
+      0.7963446955753516,
+      0.9141311377081289,
+      0.8006057624501781
+    ],
+    "per_class_dice": [
+      0.9908694125024625,
+      0.8866279367616472,
+      0.9551395092006677,
+      0.8892626905300492
+    ],
+    "confusion_matrix": [
+      [
+        25259467,
+        76179,
+        98411,
+        82572
+      ],
+      [
+        70058,
+        605738,
+        0,
+        3991
+      ],
+      [
+        85013,
+        0,
+        2066611,
+        7140
+      ],
+      [
+        53285,
+        4682,
+        3563,
+        623290
+      ]
+    ],
+    "loss": 0.41050942410450664,
+    "main_loss": 0.41050942410450664
+  },
+  "test_metrics": {
+    "mIoU": 0.8750217943072011,
+    "mDice": 0.9317194429532155,
+    "accuracy": 0.9818880059523809,
+    "per_class_iou": [
+      0.9797909975080987,
+      0.7929988520091967,
+      0.9065426650028228,
+      0.8207546627086857
+    ],
+    "per_class_dice": [
+      0.989792355598476,
+      0.8845503176096057,
+      0.9509807272018017,
+      0.9015543714029786
+    ],
+    "confusion_matrix": [
+      [
+        29108259,
+        99030,
+        104988,
+        106138
+      ],
+      [
+        90813,
+        745342,
+        1,
+        1392
+      ],
+      [
+        126782,
+        4,
+        2281825,
+        3268
+      ],
+      [
+        72631,
+        3321,
+        195,
+        856011
+      ]
+    ],
+    "loss": 0.47341491267794655,
+    "main_loss": 0.47341491267794655
+  },
+  "validation_source": "Fixed NEU holdout: train=2904, val=726; official test=840 reserved until training ends",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9987799277191711,
+      "roc_auc": 0.994507978412382
+    },
+    "夹杂": {
+      "average_precision": 0.9414444221927071,
+      "roc_auc": 0.9921465260051622
+    },
+    "斑块": {
+      "average_precision": 0.9881687833867714,
+      "roc_auc": 0.9976094504878402
+    },
+    "划痕": {
+      "average_precision": 0.9538846796762316,
+      "roc_auc": 0.9954607193582993
+    }
+  },
+  "class_names": [
+    "背景",
+    "夹杂",
+    "斑块",
+    "划痕"
+  ],
+  "parameter_count": 3652901,
+  "training_seconds": 5770.833778142929
+}

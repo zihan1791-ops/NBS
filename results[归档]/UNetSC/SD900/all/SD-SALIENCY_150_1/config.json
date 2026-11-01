@@ -1,0 +1,56 @@
+{
+  "dataset": "sd-saliency",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "epochs": 150,
+  "batch_size": 8,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "num_classes": 2,
+  "image_size": 200,
+  "num_workers": 4,
+  "device": "cuda",
+  "save_dir": "G:\\NBS\\UNetSC\\SD900\\all",
+  "log_file": "G:\\NBS\\UNetSC\\SD900\\all\\SD-SALIENCY_150_1\\result.txt",
+  "no_augment": false,
+  "lr_factor": 0.5,
+  "lr_patience": 6,
+  "patience": 100000,
+  "min_lr": 1e-06,
+  "max_norm": 0.0,
+  "seed": 123,
+  "no_vis": false,
+  "vis_max_samples": 20,
+  "scheduler_name": "cosine",
+  "warmup_epochs": 5,
+  "deterministic": "auto",
+  "dataset_original": "sd-saliency",
+  "deterministic_effective": false,
+  "validation_uses_official_test": false,
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "plot_class_names": [
+    "Background",
+    "Defect"
+  ],
+  "color_map": {
+    "0": [
+      0,
+      0,
+      0
+    ],
+    "1": [
+      0,
+      220,
+      255
+    ]
+  },
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "model": "U-Net",
+  "split_counts": {
+    "train": 630,
+    "val": 135,
+    "test": 135
+  }
+}

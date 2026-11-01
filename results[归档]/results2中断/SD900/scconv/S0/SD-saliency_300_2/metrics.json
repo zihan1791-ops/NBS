@@ -1,0 +1,89 @@
+{
+  "model_variant": "BiSeNetV2 + ScConv fused (residual)",
+  "scheduler": "cosine (warmup=5)",
+  "epochs_planned": 300,
+  "epochs_trained": 300,
+  "scconv_enabled": true,
+  "scconv_placement": [
+    "fused"
+  ],
+  "scconv_residual": true,
+  "scconv_residual_initial_scale": 0.1,
+  "scconv_gamma_normalise": true,
+  "scconv_fused_block": "scconv",
+  "scconv_replace": [],
+  "scconv_replaced_layers": [],
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_2",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "best_epoch": 171,
+  "best_val_metrics": {
+    "mIoU": 0.885824555954532,
+    "mDice": 0.9373083875195567,
+    "accuracy": 0.973712037037037,
+    "per_class_iou": [
+      0.9706002230949222,
+      0.8010488888141418
+    ],
+    "per_class_dice": [
+      0.9850808009861564,
+      0.889535974052957
+    ],
+    "confusion_matrix": [
+      [
+        4686483,
+        71950
+      ],
+      [
+        70005,
+        571562
+      ]
+    ],
+    "loss": 0.18164588455800657,
+    "main_loss": 0.18164588455800657
+  },
+  "test_metrics": {
+    "mIoU": 0.8945217079907406,
+    "mDice": 0.9424671062395757,
+    "accuracy": 0.97661,
+    "per_class_iou": [
+      0.9739205144125157,
+      0.8151229015689655
+    ],
+    "per_class_dice": [
+      0.9867879758090228,
+      0.8981462366701288
+    ],
+    "confusion_matrix": [
+      [
+        4716811,
+        69764
+      ],
+      [
+        56542,
+        556883
+      ]
+    ],
+    "loss": 0.15028900128823738,
+    "main_loss": 0.15028900128823738
+  },
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9981321030916104,
+      "roc_auc": 0.990699013658263
+    },
+    "缺陷": {
+      "average_precision": 0.9567336489606117,
+      "roc_auc": 0.9906997734615381
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3649819,
+  "training_seconds": 2700.488630771637
+}

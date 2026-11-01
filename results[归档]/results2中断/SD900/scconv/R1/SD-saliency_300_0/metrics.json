@@ -1,0 +1,94 @@
+{
+  "model_variant": "BiSeNetV2 + ScConv  (residual)",
+  "scheduler": "cosine (warmup=5)",
+  "epochs_planned": 300,
+  "epochs_trained": 300,
+  "scconv_enabled": true,
+  "scconv_placement": [],
+  "scconv_residual": true,
+  "scconv_residual_initial_scale": 0.1,
+  "scconv_gamma_normalise": true,
+  "scconv_fused_block": "scconv",
+  "scconv_replace": [
+    "detail.repeat"
+  ],
+  "scconv_replaced_layers": [
+    "detail.stage2[1] (64ch)",
+    "detail.stage2[2] (64ch)",
+    "detail.stage3[1] (128ch)",
+    "detail.stage3[2] (128ch)"
+  ],
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_0",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "best_epoch": 259,
+  "best_val_metrics": {
+    "mIoU": 0.8475869423168704,
+    "mDice": 0.9134745671648394,
+    "accuracy": 0.9641105555555556,
+    "per_class_iou": [
+      0.9601423910575553,
+      0.7350314935761855
+    ],
+    "per_class_dice": [
+      0.9796659624707467,
+      0.8472831718589322
+    ],
+    "confusion_matrix": [
+      [
+        4668581,
+        89852
+      ],
+      [
+        103951,
+        537616
+      ]
+    ],
+    "loss": 0.23548344042566088,
+    "main_loss": 0.23548344042566088
+  },
+  "test_metrics": {
+    "mIoU": 0.8466253245839342,
+    "mDice": 0.912734556777612,
+    "accuracy": 0.965172037037037,
+    "per_class_iou": [
+      0.9615161260223024,
+      0.7317345231455661
+    ],
+    "per_class_dice": [
+      0.9803805467275266,
+      0.8450885668276973
+    ],
+    "confusion_matrix": [
+      [
+        4698937,
+        87638
+      ],
+      [
+        100433,
+        512992
+      ]
+    ],
+    "loss": 0.22231517301665413,
+    "main_loss": 0.22231517301665413
+  },
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.9974289929713855,
+      "roc_auc": 0.985391193752597
+    },
+    "缺陷": {
+      "average_precision": 0.9185070553570264,
+      "roc_auc": 0.9853911988069107
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3325722,
+  "training_seconds": 3036.6221041679382
+}

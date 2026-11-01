@@ -1,0 +1,75 @@
+{
+  "best_epoch": 96,
+  "best_val_metrics": {
+    "mIoU": 0.8814911908109762,
+    "mDice": 0.9346834723124848,
+    "accuracy": 0.9726840740740741,
+    "per_class_iou": [
+      0.9694805806109222,
+      0.7935018010110301
+    ],
+    "per_class_dice": [
+      0.9845038231452828,
+      0.8848631214796868
+    ],
+    "confusion_matrix": [
+      [
+        4685679,
+        72754
+      ],
+      [
+        74752,
+        566815
+      ]
+    ],
+    "loss": 0.1748782040896239,
+    "main_loss": 0.1748782040896239
+  },
+  "test_metrics": {
+    "mIoU": 0.8801521083512829,
+    "mDice": 0.9338168908921545,
+    "accuracy": 0.9731144444444444,
+    "per_class_iou": [
+      0.9700847867638028,
+      0.790219429938763
+    ],
+    "per_class_dice": [
+      0.9848152661057101,
+      0.8828185156785988
+    ],
+    "confusion_matrix": [
+      [
+        4707934,
+        78641
+      ],
+      [
+        66541,
+        546884
+      ]
+    ],
+    "loss": 0.1657011491281015,
+    "main_loss": 0.1657011491281015
+  },
+  "dataset": "sd-saliency",
+  "run_name": "SD-saliency_300_0",
+  "data_root": "G:\\NBS\\data\\SD-saliency",
+  "validation_source": "Stratified validation split (fixed random seed)",
+  "official_test_used_for_checkpoint_selection": false,
+  "test_metrics_are_independent": true,
+  "curve_metrics": {
+    "背景": {
+      "average_precision": 0.998452741419152,
+      "roc_auc": 0.9911828514427793
+    },
+    "缺陷": {
+      "average_precision": 0.9518818148945907,
+      "roc_auc": 0.9911828467765513
+    }
+  },
+  "class_names": [
+    "背景",
+    "缺陷"
+  ],
+  "parameter_count": 3619738,
+  "training_seconds": 631.7140879631042
+}

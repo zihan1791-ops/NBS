@@ -1,0 +1,7 @@
+{
+  "models": [
+    {"name":"U-Net","type":"unet","config":"config_unet","checkpoint":"results/old/unet/NEU_300_1/best.pth","num_classes":4,"in_channels":3,"base_channels":32},
+    {"name":"BiSeNetV2 (B0)","type":"scconv","config":"configScConvB0","checkpoint":"results/bisenetv2_ablation_B0_baseline/NEU_90_0/best.pth","num_classes":4,"in_channels":3},
+    {"name":"BiSeNetV2 + ScConv (D2)","type":"scconv","config":"configScConvD2","checkpoint":"results/bisenetv2_ablation_D2_direct/NEU_90_0/best.pth","num_classes":4,"in_channels":3}
+  ]
+}

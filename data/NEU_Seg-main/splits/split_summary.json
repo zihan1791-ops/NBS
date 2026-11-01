@@ -1,0 +1,14 @@
+{
+  "dataset": "NEU-Seg",
+  "random_seed": 42,
+  "method": "deterministic shuffled 80/20 split of images/train; official images/test kept untouched",
+  "counts": {
+    "train": 2904,
+    "val": 726,
+    "test": 840
+  },
+  "total": 4470,
+  "train_pool_ids_overlap": 0,
+  "train_test_id_overlap_allowed": true,
+  "note": "train and test filenames may repeat because they are stored in separate source split directories."
+}

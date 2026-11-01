@@ -1,0 +1,7 @@
+torch>=2.6.0
+numpy>=1.24
+opencv-python-headless>=4.8
+tqdm>=4.66
+Pillow>=10.0
+UserWarning: nll_loss2d_forward_out_cuda_template does not have a deterministic implementation, but you set 'torch.use_deterministic_algorithms(True, warn_only=True)'. You can file an issue at https://github.com/pytorch/pytorch/issues to help us prioritize adding deterministic support for this operation. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\Context.cpp:96.)
+  return torch._C._nn.cross_entropy_loss(

@@ -1,0 +1,281 @@
+{
+  "settings": {
+    "PROJECT_DIR": "G:\\NBS",
+    "DATA_ROOT": "G:\\NBS\\data\\NEU_Seg-main",
+    "SPLIT_DIR": "G:\\NBS\\data\\NEU_Seg-main\\splits",
+    "OUTPUT_DIR": "G:\\NBS\\results\\bisenetv2_ablation_D2_direct",
+    "IMAGE_DIR_NAME": "images",
+    "MASK_DIR_NAME": "masks",
+    "TRAIN_SPLIT_NAME": "train",
+    "TEST_SPLIT_NAME": "test",
+    "NUM_CLASSES": 4,
+    "CLASS_NAMES": [
+      "背景",
+      "夹杂",
+      "斑块",
+      "划痕"
+    ],
+    "COLOR_MAP_BGR": {
+      "0": [
+        0,
+        0,
+        0
+      ],
+      "1": [
+        255,
+        0,
+        0
+      ],
+      "2": [
+        0,
+        255,
+        0
+      ],
+      "3": [
+        0,
+        0,
+        255
+      ]
+    },
+    "MASK_CHANNEL_TO_CLASS": [
+      3,
+      2,
+      1
+    ],
+    "GRAYSCALE_EXTREME_LOW": 0,
+    "GRAYSCALE_EXTREME_HIGH": 255,
+    "IMAGE_SIZE": 200,
+    "INPUT_CHANNELS": 3,
+    "IMAGE_VALUE_SCALE": 255.0,
+    "SALT_PEPPER_THRESHOLD": 0.02,
+    "MEDIAN_BLUR_KERNEL": 3,
+    "AUGMENT_TRAINING": true,
+    "HORIZONTAL_FLIP_PROBABILITY": 0.5,
+    "VERTICAL_FLIP_PROBABILITY": 0.5,
+    "ROTATION_PROBABILITY": 0.75,
+    "ROTATION_ANGLES": [
+      90,
+      180,
+      270
+    ],
+    "EPOCHS": 90,
+    "BATCH_SIZE": 32,
+    "LEARNING_RATE": 0.001,
+    "WEIGHT_DECAY": 0.0001,
+    "VALIDATION_RATIO": 0.2,
+    "EXTERNAL_TEST_RATIO": 0.15,
+    "USE_OFFICIAL_TEST_AS_VALIDATION": false,
+    "NUM_WORKERS": 4,
+    "RANDOM_SEED": 42,
+    "DEVICE": "auto",
+    "PIN_MEMORY": true,
+    "PERSISTENT_WORKERS": true,
+    "CUDNN_DETERMINISTIC": true,
+    "CUDNN_BENCHMARK": false,
+    "EARLY_STOPPING_PATIENCE": 90,
+    "AUXILIARY_LOSS_WEIGHT": 0.4,
+    "CROSS_ENTROPY_LOSS_WEIGHT": 1.0,
+    "DICE_LOSS_WEIGHT": 1.0,
+    "DICE_EPSILON": 1e-06,
+    "OPTIMIZER_NAME": "AdamW",
+    "SCHEDULER_MODE": "max",
+    "SCHEDULER_FACTOR": 0.5,
+    "SCHEDULER_PATIENCE": 6,
+    "MIN_LEARNING_RATE": 1e-06,
+    "DETAIL_CHANNELS": [
+      64,
+      64,
+      128
+    ],
+    "DETAIL_STAGE_REPEATS": [
+      2,
+      3,
+      3
+    ],
+    "SEMANTIC_CHANNELS": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "GE_EXPANSION": 6,
+    "STAGE_REPEATS": [
+      1,
+      1,
+      3
+    ],
+    "MAIN_HEAD_CHANNELS": 1024,
+    "AUXILIARY_HEAD_CHANNELS": 128,
+    "HEAD_DROPOUT": 0.1,
+    "USE_AUXILIARY_HEADS": true,
+    "SAVE_VISUALIZATIONS": true,
+    "VISUALIZATION_MAX_SAMPLES": 20,
+    "VISUALIZATION_PANEL_LABELS": [
+      "Input",
+      "Ground truth",
+      "Prediction"
+    ],
+    "VISUALIZATION_FONT_SCALE": 0.45,
+    "VISUALIZATION_FONT_THICKNESS": 1,
+    "VISUALIZATION_TEXT_COLOR_BGR": [
+      255,
+      255,
+      255
+    ],
+    "VISUALIZATION_TEXT_ORIGIN": [
+      5,
+      16
+    ],
+    "BEST_CHECKPOINT_NAME": "best.pth",
+    "TRAIN_HISTORY_NAME": "result.txt",
+    "TRAIN_HISTORY_JSONL_NAME": "history.jsonl",
+    "METRICS_NAME": "metrics.json",
+    "CONFIG_SNAPSHOT_NAME": "config.json",
+    "VISUALIZATION_DIR_NAME": "visualization",
+    "PROBABILITY_HISTOGRAM_BINS": 1000,
+    "RESULTS_PLOT_NAME": "results.png",
+    "PR_CURVE_PLOT_NAME": "PR_curve.png",
+    "ROC_CURVE_PLOT_NAME": "ROC_curve.png",
+    "F1_CURVE_PLOT_NAME": "F1_curve.png",
+    "CONFUSION_MATRIX_PLOT_NAME": "confusion_matrix.png",
+    "PLOT_CLASS_NAMES": [
+      "Background",
+      "Inclusion",
+      "Patch",
+      "Scratch"
+    ],
+    "PLOT_COLORS_BGR": [
+      [
+        255,
+        128,
+        0
+      ],
+      [
+        0,
+        150,
+        0
+      ],
+      [
+        0,
+        0,
+        230
+      ],
+      [
+        180,
+        0,
+        180
+      ]
+    ],
+    "PLOT_BACKGROUND_BGR": [
+      250,
+      250,
+      250
+    ],
+    "PLOT_GRID_BGR": [
+      220,
+      220,
+      220
+    ],
+    "PLOT_AXIS_BGR": [
+      70,
+      70,
+      70
+    ],
+    "RESULTS_PLOT_WIDTH": 1800,
+    "RESULTS_PLOT_HEIGHT": 1200,
+    "RESULTS_HEADER_HEIGHT": 145,
+    "CURVE_PLOT_WIDTH": 1200,
+    "CURVE_PLOT_HEIGHT": 850,
+    "BEST_MARKER_BGR": [
+      0,
+      110,
+      255
+    ],
+    "USE_SC_CONV": true,
+    "SC_CONV_GROUP_NUM": 4,
+    "SC_CONV_GATE_THRESHOLD": 0.5,
+    "SC_CONV_ALPHA": 0.5,
+    "SC_CONV_SQUEEZE_RATIO": 2,
+    "SC_CONV_GROUP_SIZE": 2,
+    "SC_CONV_GROUP_KERNEL_SIZE": 3,
+    "SC_CONV_PLACEMENT": [
+      "fused"
+    ],
+    "SC_CONV_RESIDUAL": false,
+    "SC_CONV_RESIDUAL_SCALE": 0.1,
+    "EXPERIMENT_NAME": "D2-no-residual",
+    "EXPERIMENT_NOTE": "支线 D2：SC_CONV_RESIDUAL=False，fused 位置直插 ScConv。",
+    "DETERMINISTIC_ALGORITHMS": true,
+    "SCHEDULER_NAME": "cosine",
+    "WARMUP_EPOCHS": 5,
+    "SC_CONV_GAMMA_NORMALISE": true
+  },
+  "effective_arguments": {
+    "dataset": "neu",
+    "data_root": "G:\\NBS\\data\\NEU_Seg-main",
+    "output_dir": "G:\\NBS\\results\\bisenetv2_ablation_D2_direct\\NEU_90_2",
+    "image_size": 200,
+    "num_classes": 4,
+    "epochs": 90,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "val_ratio": 0.2,
+    "aux_weight": 0.4,
+    "ce_weight": 1.0,
+    "dice_weight": 1.0,
+    "main_head_channels": 1024,
+    "num_workers": 4,
+    "patience": 90,
+    "seed": 2024,
+    "device": "cuda",
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 6,
+    "min_lr": 1e-06,
+    "scheduler_name": "cosine",
+    "warmup_epochs": 5,
+    "deterministic": "auto",
+    "no_augment": false,
+    "no_visualization": false,
+    "vis_samples": 20,
+    "eval_only": false,
+    "dataset_tag": "NEU",
+    "deterministic_effective": true,
+    "validation_uses_official_test": false,
+    "class_names": [
+      "背景",
+      "夹杂",
+      "斑块",
+      "划痕"
+    ],
+    "plot_class_names": [
+      "Background",
+      "Inclusion",
+      "Patch",
+      "Scratch"
+    ],
+    "color_map": {
+      "0": [
+        0,
+        0,
+        0
+      ],
+      "1": [
+        255,
+        0,
+        0
+      ],
+      "2": [
+        0,
+        255,
+        0
+      ],
+      "3": [
+        0,
+        0,
+        255
+      ]
+    },
+    "validation_source": "Fixed NEU holdout: train=2904, val=726; official test=840 reserved until training ends"
+  }
+}
